@@ -1,0 +1,29 @@
+print("1.Add\n2.Subtract")
+print("3.Multiply\n4.Divide")
+while True:    
+    choic = input("Enter a number for a operation: ")
+    operations = [1, 2, 3, 4]
+    choice = (int(choic))
+    if choice in operations:
+        break
+    else:
+        print("That is not a choice. Please try again")
+while True:
+    num1 = (input("Enter the first number: "))
+    num2 = (input("Enter the second number: "))
+    num1check = num1.isnumeric()
+    num2check = num2.isnumeric()
+    if num1check and num2check == True:
+        break
+    else:
+        print("Please enter numbers only.")
+num1 = (int(num1))
+num2 = (int(num2))
+if choice == 1:
+    print(f"The sum is", num1 + num2)
+elif choice == 2:
+    print(f"The difference is", num1 - num2)
+elif choice == 3:
+    print(f"The product is", num1 * num2)
+elif choice == 4:
+    print(f"The quotient is," (num1 / num2))
